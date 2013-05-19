@@ -26,6 +26,8 @@
 
 \usepackage{tocloft}
 
+\usepackage{hyperref}
+
 %-----------------------------------------------------------
 
 %Edit these values as you see fit
@@ -72,15 +74,15 @@
 
 \newcommand{\resheading}[1]{\vspace{8pt}
 
-  \parbox{\textwidth}{\setlength{\FrameSep}{\outerbordwidth}
+\parbox{\textwidth}{\setlength{\FrameSep}{\outerbordwidth}
 
-    \begin{shaded}
+\begin{shaded}
 
 \setlength{\fboxsep}{0pt}\framebox[\textwidth][l]{\setlength{\fboxsep}{4pt}\fcolorbox{shadecolorB}{shadecolorB}{\textbf{\sffamily{\mbox{~}\makebox[6.762in][l]{\large #1} \vphantom{p\^{E}}}}}}
 
-    \end{shaded}
+\end{shaded}
 
-  }\vspace{-5pt}
+}\vspace{-5pt}
 
 }
 
@@ -88,9 +90,9 @@
 
 \begin{tabular*}{6.5in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
 
-		\textbf{#1} & #2 \\
+\textbf{#1} & #2 \\
 
-		\textit{#3} & \textit{#4} \\
+\textit{#3} & \textit{#4} \\
 
 \end{tabular*}\vspace{-6pt}}
 
@@ -102,11 +104,26 @@
 
 \textbf{\Large Oscar A. Funes M.} & \today \\
 
-Student, Ingenier\'ia en Inform\'atica y Sistemas & me@oscarfunes.com\\
+Student, Informatics and Systems Engineer & me@oscarfunes.com\\
 
-9a. Ave. 13-40 Zona 16, Guatemala City, Guatemala & oscarfunes.com \\
+9a. Ave. 13-40 Zone 16, Guatemala City, Guatemala & oscarfunes.com \\
 
 \end{tabular*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\resheading{Key Technologies}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+
+\item {\bf Languages:} JavaScript, Ruby (Rails), PHP
+\item {\bf FrontEnd:} HTML, CSS, LESS
+\item {\bf Databases:} MySQL, MSSQL
+\item {\bf Frameworks:} Ruby on Rails, .Net Framework, JQuery
+
+\end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -118,19 +135,19 @@ Student, Ingenier\'ia en Inform\'atica y Sistemas & me@oscarfunes.com\\
 
 \item
 
-	\ressubheading{Universidad Rafael Land\'ivar}{}{Ingenier\'ia en Inform\'atica y Sistemas}{expected 2013}
+\ressubheading{Universidad Rafael Land\'ivar}{}{Informatics and Systems Engineer}{expected 2013}
 
-	\begin{itemize}
+\begin{itemize}
 
-		\resitem{President of student council - 2013}
+\resitem{President of student council - 2013}
 
-		\resitem{Treasurer of stundet council - 2012}
+\resitem{Treasurer of student council - 2012}
 
-	\end{itemize}
+\end{itemize}
 
 \item
 
-	\ressubheading{Instituto de Estudios Avanzados Suger Montano}{}{Bachillerato en Computaci\'on }{2006 - 2007}
+\ressubheading{Instituto de Estudios Avanzados Suger Montano}{}{Technical Highschool}{2006 - 2007}
 
 \end{itemize}
 
@@ -144,42 +161,46 @@ Student, Ingenier\'ia en Inform\'atica y Sistemas & me@oscarfunes.com\\
 
 \item
 
-	\ressubheading{Universidad Rafael Land\'ivar}{}{T\'ecnico Desarrollador I}{2012 - }
+\ressubheading{Universidad Rafael Land\'ivar}{}{Technical Developer I}{2013}
 
-	\begin{itemize}
+\begin{itemize}
 
-		\resitem{Maintenance and support of client-server applications written in \texttt{PowerBuilder}}
+  \resitem{Maintenance development and support of client-server applications written in \textbf{PowerBuilder}}
 
-  	\resitem{Maintenance and support of website written in \texttt{ASP.Net}}
+  \resitem{Maintenance development and support of website written in \textbf{C\# ASP.Net}}
 
-	\end{itemize}
+\end{itemize}
 
 \item
 
-  \ressubheading{Universidad Rafael Land\'ivar}{}{T\'ecnico Desarrollador II}{2011 - 2012}
+\ressubheading{Universidad Rafael Land\'ivar}{}{Technical Developer II}{2011 - 2013}
+
+\begin{itemize}
+
+  \resitem{Maintenance development and support of client-server applications written in \textbf{PowerBuilder}}
+
+  \resitem{Maintenance development and support of website written in \textbf{C\# ASP.Net}}
+
+  \resitem{Automatized results for vocational tests done at our campus for local schools}
+
+\end{itemize}
+
+\item
+
+\ressubheading{Superintendencia de Administraci\'on Tributaria (SAT)}{}{IT Intern}{2007}
 
   \begin{itemize}
 
-    \resitem{Maintenance and support of client-server applications written in \texttt{PowerBuilder}}
+    \resitem{Cleaning and tech support for computer equipment}
 
-    \resitem{Maintenance and support of website written in \texttt{ASP.Net}}
+    \resitem{Structured cabling at new locations}
 
   \end{itemize}
 
-\item
-
-	\ressubheading{Superintendencia de Administraci\'on Tributaria (SAT)}{}{IT Intern}{2007}
-
-	\begin{itemize}
-
-		\resitem{Cleaning and tech support for computer equipment}
-
-    	\resitem{Structured cabling at new locations}
-
-	\end{itemize}
-
 
 \end{itemize}
+
+\pagebreak
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -189,15 +210,53 @@ Student, Ingenier\'ia en Inform\'atica y Sistemas & me@oscarfunes.com\\
 
 \begin{itemize}
 
-	\item {\bf Languages:} C\#, C/C++, PHP, JavaScript, Java, Ruby (Rails)
+  \item {\bf Languages:} C\#, C/C++, PHP, JavaScript, Java, Ruby (Rails), Powerscript
 
-	\item {\bf Databases:} MySQL, MSSQL, T-SQL
+  \item {\bf Databases:} MySQL, MSSQL, T-SQL
 
-	\item {\bf FrontEnd:} HTML, CSS, LESS
+  \item {\bf FrontEnd:} HTML, CSS, LESS
 
-	\item {\bf Frameworks:} Ruby on Rails, .Net Framework, JQuery
+  \item {\bf Frameworks:} Ruby on Rails, .Net Framework, JQuery
 
-	\item {\bf CMS:} Wordpress
+  \item {\bf CMS:} Wordpress
+
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\resheading{Online Presence}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+
+  \item \ressubheading {Online Profiles}{}{My different homes on the web}{}
+
+  \begin{itemize}
+
+    \item {\bf Personal Blog:} \url{http://oscarfunes.com}
+
+    \item {\bf StackOverflow:} \url{http://stackoverflow.com/users/367927/osukaa}
+
+    \item {\bf Github:} \url{https://github.com/osukaa}
+
+    \item {\bf Twitter:} \url{https://twitter.com/CocaFunes}
+
+  \end{itemize}
+
+  \item \ressubheading {Github Repositories}{}{Works I've done from books or tutorials about different technologies}{}
+
+  \begin{itemize}
+
+    \item {\bf node.js:} \url{https://github.com/osukaa/node.js-test-app}
+
+    \item {\bf Rails:} \url{https://github.com/osukaa/first\_app}
+
+    \item {\bf Rails:} \url{https://github.com/osukaa/demo\_app}
+
+    \item {\bf Chrome Extension (work in progress):} \url{https://github.com/osukaa/Count-Me}
+
+  \end{itemize}
 
 \end{itemize}
 
